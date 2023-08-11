@@ -1,5 +1,5 @@
 const User = require("../models/user.model.js");
-require("cloudinary");
+const cloudinary = require("cloudinary");
 const AppError = require("../utils/error.utils.js");
 const register = async (req, res) => {
   const { fullName, email, password } = req.body;

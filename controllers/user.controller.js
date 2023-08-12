@@ -1,4 +1,9 @@
-const User = require("../models/user.model.js");
+const {
+  User,
+  findOne,
+  create,
+  generateJWTToken,
+} = require("../models/user.model.js");
 const cloudinary = require("cloudinary");
 const AppError = require("../utils/error.utils.js");
 const register = async (req, res) => {
